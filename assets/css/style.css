@@ -65,8 +65,10 @@ h6 {
   z-index: 997;
   overflow-y: auto;
   /*width:78em;*/
-  margin-left:8vh;
+  margin-left:5vh;
+  margin-right:5vh;
   display: flex;
+  text-align: justify;
 }
 
 
@@ -107,8 +109,9 @@ h6 {
 }
 
 #header img {
-  padding: 0;
+  padding: 5%;
   margin: 0;
+  width: 95%;
 }
 
 #header .social-links {
@@ -136,8 +139,6 @@ h6 {
 
 #header>#pic{
   width: 33%;
-  margin-left: 2em;
-  margin-right: 5em;
 }
 
 @media (max-width: 992px) {
@@ -162,6 +163,7 @@ h6 {
 
   #header {
     flex-direction: column-reverse;
+    margin-bottom: 5vh;
   }
 
   #header img{
@@ -1214,12 +1216,15 @@ section .container {
 # Credits
 --------------------------------------------------------------*/
 .credits {
-  position: fixed;
+  /*position: fixed;*/
+  display: flex;
+  flex-direction: column;
+  background-color: #040404;
   right: 0;
   left: 0;
   bottom: 0;
   padding: 15px;
-  text-align: right;
+  text-align: left;
   font-size: 13px;
   color: #fff;
   z-index: 999999;
