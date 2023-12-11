@@ -1246,3 +1246,7 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+.small{
+  padding: 47px;
+}
