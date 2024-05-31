@@ -249,4 +249,33 @@
    */
   new PureCounter();
 
+  let logo=[]
+  for (let i = 0; i < 12; i++) {
+    logo[i] = "logo"+i;
+  }
+  console.log(logo)
+  logo.forEach(e =>{ 
+    console.log(e);
+    document.getElementById(e).addEventListener('click',function(){
+      displaytext(logo.indexOf(e));
+    });
+  });
+
+  //document.getElementById("logo0").addEventListener('click',displaytext);
+  
+
+ function displaytext(e){
+  //e.preventDefault();
+  console.log(e);
+  let text = document.getElementById("desc"+e).style.display
+  console.log(text)
+  if(text == 'none'){
+    console.log("a")
+    document.getElementById("desc"+e).style.display='inline';
+  }else{
+    console.log("b")
+    document.getElementById("desc"+e).style.display='none';
+  }
+ }
+
 })()
